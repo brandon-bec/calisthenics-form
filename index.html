@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Calisthenic Survey Form </title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title"> Calisthenics Survey Form </h1>
+      <p id="description"> Thank you for taking the time to help the calisthenics comunity improve </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name"> Name </label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email"> Email </label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"> Age </label>
+          <input type="number" id="number" name="age" min="13" max="100" class="form-control" placeholder="Enter your age" required>
+        </div>
+        <div class="form-group">
+          <label for="dropdown">In wich category you train for?</label>
+          <select id="dropdown" name="dropdown" class="form-control" required>
+            <option disabled selected value> Select your main category </option>
+            <option value="setsreps"> Sets & Reps </option>
+            <option value="streetlifting"> Streetlifting </option>
+            <option value="statics"> Statics </option>
+            <option value="freestyle"> FreeStyle </option>
+          </select>
+        </div>
+        <div class="option-group">
+          <p>Wich one do you train for?</p>
+          <label>
+            <input type="radio" id="objetive" name="objetive" value="stronger" class="input-radio" checked>
+            To get stronger
+          </label>
+          <label>
+            <input type="radio" id="objetive" name="objetive" value="movement-pattern" class="input-radio">
+            To get a movement pattern
+          </label>
+          <label>
+            <input type="radio" id="objetive" name="objetive" value="aesthetics" class="input-radio">
+            Aesthetics results
+          </label>
+        </div>
+        <div class="option-group">
+          <p> Select the exercises you know </p>
+          <label>
+            <input type="checkbox" name="exercise" value="pullups" class="input-checkbox" checked>
+            Pull ups
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="handstand-push-ups" class="input-checkbox">
+            Handstand push ups
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="dragon-flag-raises" class="input-checkbox">
+            Dragon flag raises
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="rows" class="input-checkbox">
+            Rows
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="pushups" class="input-checkbox">
+            Push ups
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="plank" class="input-checkbox">
+            plank
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="leg-raises" class="input-checkbox">
+            Leg raises
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="dips" class="input-checkbox">
+            Dips
+          </label>
+          <label>
+            <input type="checkbox" name="exercise" value="muscleups">
+            Muscle ups
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="comment"> Give us some feedback </label>
+          <textarea id="comment" name="comment" cols="30" rows="3" class="textarea" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
